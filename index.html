@@ -7,11 +7,18 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+    <!-- FONTS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@300;600&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="./css/main.css">
     <title>Page</title>
 </head>
 <body>
-    <nav class="sticky z-50 top-0 p-5 bg-white shadow md:flex md:items-center md:justify-between font-['Poppins']">
+    <nav class="sticky z-50 top-0 p-5 bg-white shadow md:flex md:items-center md:justify-between font-['Heebo'] font-medium">
         <div class="flex justify-between items-center ">
           <span class="text-2xl font-[Poppins] cursor-pointer">
             <a href="#">KJ</a>
@@ -30,7 +37,7 @@
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">Work</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Blog</a>
+            <a href="https://kjdotio-blog.netlify.app/index.html" class="text-xl hover:text-cyan-500 duration-500">Blog</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
@@ -43,7 +50,85 @@
         </ul>
       </nav>
 
+      <section class="flex flex-col mx-6 my-10 font-['Heebo'] text-myblue gap-6 items-center md:flex-row-reverse md:mx-28 md:my-28 md:justify-center">
+            <div class="flex flex-col md:mx-auto">
+              <img class="w-52 rounded-full md:w-80 xl:w-[450px] " src="./images/ME.png" alt="">
+    
+            </div>
+            <div class="text-center flex-col md:text-left md:mx-auto">
+                <h1 class="text-4xl font-bold mb-6 md:text-[50px] xl:text-7xl">Hi, I'm KJ, <br> a Frontend Dev.</h1>
+                <p class="mb-6 font-semibold">Im also a Video editor, Graphic designer, <br> Motion designer and day trader.</p>
+                <button class="bg-resumered py-2 px-5 font-medium text-xl text-white hover:bg-red-400 focus:bg-red-500 duration-200 ease">Download Resume</button>
+            </div>
 
+      </section>
+
+      <h1 class="mb-5 font-bold text-3xl text-center text-myblue flex flex-col">Recent Posts</h1>
+
+      <section class="bg-bpostbg flex items-center flex-col p-5 md:justify-around md:flex-row mb-10">
+
+          <div class="bg-white max-w-sm p-5 rounded-md xl:max-w-lg text-myblue">
+              <a href="https://kjdotio-blog.netlify.app/pages/main-blog/what-its-all-about/what-its-all-about.html" target="_blank">
+                  <img src="./images/blogimg.png" alt="" class=" max-w-full hover:scale-105 duration-200 ease mb-5 rounded-lg active:scale-105">
+              </a>
+
+              <div class="text-center mb-2">
+                <p class="text-base font-semibold">21st March | 5 min read</p>
+              </div>
+
+              <div class="text-center">
+                  <a href="https://kjdotio-blog.netlify.app/pages/main-blog/what-its-all-about/what-its-all-about.html" target="_blank" class=" font-bold mt-5 text-xl hover:underline decoration-2 hover:text-blue-400 duration-200 ease active:text-blue-400
+                  active:underline">
+                  What its all about.</a>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <h1 class="mb-5 font-bold text-3xl text-center text-myblue flex flex-col">Featured Work</h1>
+
+      <section class="mx-6 my-10 md:mx-28 md:my-28 text-myblue grid items-center justify-center">
+
+       
+              <div class="flex flex-col items-center md:grid md:grid-cols-2 md:items-center">
+                  <div class="flex mb-3 md:justify-end">
+                      <img src="./images/edie-home-page.png" alt="" class="w-[400px] md:mr-10 xl:mr-36">
+                  </div>
+                  <div class="flex flex-col items-center md:items-start md:ml-10 xl:ml-36">
+                      <h1 class="font-bold text-2xl mb-3">Edie Homepage</h1>
+                      <div class="flex mb-3">
+                          <button class="rounded-lg text-bold text-white bg-workbtnclr py-1 px-2 cursor-default">2022</button>
+                          <p class="ml-6 text-gray-400">Landing Page</p>
+                          <a href="https://github.com/KJdotIO/edie-homepage-master" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease
+                          active:text-blue-400
+                          active:underline">Repo</a>
+
+                          <a href="https://edie-homepage-kjdotio.netlify.app/" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease active:text-blue-400
+                          active:underline">Demo</a>
+                      </div>
+                      <p class="font-semibold text-">A landing page for a web service business. <br> Built with HTML,SCSS.</p>
+          
+                      <div class="mx-3">
+
+                      </div>
+
+                  </div>
+              </div>
+
+      </section>
+
+      <footer class="bg-bpostbg bottom-0 flex flex-col items-center p-10">
+
+        <div class="text-myblue mb-5">
+            <a href="https://github.com/KJdotIO" target="_blank"><i class='bx bxl-github text-4xl mx-4'></i></a>
+
+            <a href="https://twitter.com/dotio_" target="_blank"><i class='bx bxl-twitter text-4xl mx-4'></i></a>
+        </div>
+
+        <p class="font-semibold">Made with <i class='bx bxs-heart text-rose-500'></i> by KJdotIO</p>
+        
+      </footer>
       <script>
         function Menu(e){
           let list = document.querySelector('ul');
