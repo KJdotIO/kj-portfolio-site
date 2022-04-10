@@ -1,0 +1,24 @@
+{
+  "name": "kj-portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJdotIO/kj-portfolio-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KJdotIO/kj-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/KJdotIO/kj-portfolio-site#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
