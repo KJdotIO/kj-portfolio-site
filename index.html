@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@300;600&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="./css/main.css">
-    <title>Page</title>
+    <title>Home</title>
 </head>
 <body>
     <nav class="sticky z-50 top-0 p-5 bg-white shadow md:flex md:items-center md:justify-between font-['Heebo'] font-medium">
@@ -32,28 +32,31 @@
     
         <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+            <a href="./index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Work</a>
+            <a href="./pages/work.html" class="text-xl hover:text-cyan-500 duration-500">Work</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
             <a href="https://kjdotio-blog.netlify.app/index.html" class="text-xl hover:text-cyan-500 duration-500">Blog</a>
           </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
-          </li>
-    
-        <h2 class=""></h2>
+          
+          <!--
+            ===== UNUSED LINKS, Use when information available
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
+            </li>
+            
+          -->
         </ul>
       </nav>
 
       <section class="flex flex-col mx-6 my-10 font-['Heebo'] text-myblue gap-6 items-center md:flex-row-reverse md:mx-28 md:my-28 md:justify-center">
             <div class="flex flex-col md:mx-auto">
-              <img class="w-52 rounded-full md:w-80 xl:w-[450px] " src="./images/ME.png" alt="">
+              <img class="w-52 rounded-full md:w-80 xl:w-[450px]" src="./images/ME.png" alt="">
     
             </div>
             <div class="text-center flex-col md:text-left md:mx-auto">
@@ -113,26 +116,51 @@
 
       <h1 class="mb-5 font-bold text-3xl text-center text-myblue flex flex-col">Featured Work</h1>
 
-      <section class="mx-6 my-10 md:mx-28 md:my-28 text-myblue grid items-center justify-center">
-
-       
-              <div class="flex flex-col items-center md:grid md:grid-cols-2 md:items-center">
+        <section class="mx-6 my-10 md:mx-28 md:my-28 text-myblue grid items-center justify-center gap-20">
+  
+         
+                <div class="flex flex-col items-center md:grid md:grid-cols-2 md:items-center">
+                    <div class="flex mb-3 md:justify-end">
+                        <img src="./images/edie-home-page.png" alt="" class="w-[400px] md:mr-10 xl:mr-36 border-4 border-myblue">
+                    </div>
+                    <div class="flex flex-col items-center md:items-start md:ml-10 xl:ml-36">
+                        <h1 class="font-bold text-2xl mb-3">Edie Homepage</h1>
+                        <div class="flex mb-3">
+                            <button class="rounded-lg text-bold text-white bg-workbtnclr py-1 px-2 cursor-default">2022</button>
+                            <p class="ml-6 text-gray-400">Landing Page</p>
+                            <a href="https://github.com/KJdotIO/edie-homepage-master" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease
+                            active:text-blue-400
+                            active:underline">Repo</a>
+  
+                            <a href="https://edie-homepage-kjdotio.netlify.app/" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease active:text-blue-400
+                            active:underline">Demo</a>
+                        </div>
+                        <p class="font-semibold text-">A landing page for a web service business. <br> Built with HTML, SCSS.</p>
+            
+                        <div class="mx-3">
+  
+                        </div>
+  
+                    </div>
+                </div>
+  
+                <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:items-center">
                   <div class="flex mb-3 md:justify-end">
-                      <img src="./images/edie-home-page.png" alt="" class="w-[400px] md:mr-10 xl:mr-36">
+                      <img src="./images/advantage-website.png" alt="" class="w-[400px] md:mr-10 xl:mr-36 border-4 border-myblue">
                   </div>
                   <div class="flex flex-col items-center md:items-start md:ml-10 xl:ml-36">
-                      <h1 class="font-bold text-2xl mb-3">Edie Homepage</h1>
+                      <h1 class="font-bold text-2xl mb-3">Advantage Landingpage</h1>
                       <div class="flex mb-3">
                           <button class="rounded-lg text-bold text-white bg-workbtnclr py-1 px-2 cursor-default">2022</button>
                           <p class="ml-6 text-gray-400">Landing Page</p>
-                          <a href="https://github.com/KJdotIO/edie-homepage-master" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease
+                          <a href="https://github.com/KJdotIO/advantage-landing-page" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease
                           active:text-blue-400
                           active:underline">Repo</a>
 
-                          <a href="https://edie-homepage-kjdotio.netlify.app/" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease active:text-blue-400
+                          <a href="https://advantage-by-kjdotio.netlify.app/" target="_blank" class="ml-6 font-semibold hover:underline decoration-2 hover:text-blue-400 duration-200 ease active:text-blue-400
                           active:underline">Demo</a>
                       </div>
-                      <p class="font-semibold text-">A landing page for a web service business. <br> Built with HTML,SCSS.</p>
+                      <p class="font-semibold text-">A landing page for a business specialising in one card for multiple cards. Same concept as <a href="https://www.curve.com/en-gb/" class="font-semibold hover:underline decoration-2 text-blue-400 duration-200 ease hover:text-blue-500 active:underline">Curve.</a> <br> Built with HTML, CSS.</p>
           
                       <div class="mx-3">
 
@@ -141,7 +169,10 @@
                   </div>
               </div>
 
-      </section>
+              <div class="flex justify-end">
+                <a href="./pages/work.html" class="flex items-center font-semibold hover:underline decoration-2 text-blue-400 duration-200 ease hover:text-blue-500 active:underline">View all <i class='bx bx-right-arrow-alt'></i></a>
+              </div>
+        </section>
 
       <footer class="bg-bpostbg bottom-0 flex flex-col items-center p-10">
 
